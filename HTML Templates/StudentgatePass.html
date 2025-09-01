@@ -1,0 +1,290 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://staticassets.digiclove.com/styles/invoice_print_v3.css">
+
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+             font-family: Arial, Garamond, Georgia;
+            background-color: #f0f0f0;
+        }
+        
+        .a4-page {
+            width: 210mm;
+            height: 297mm;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding-top: 23.591;
+            padding-right: 40.591;
+            padding-left: 34.591;
+            box-sizing: border-box;
+        }
+        
+        .gate-pass-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid black;
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+        
+        .header-row {
+            border-bottom: 1px solid black;
+        }
+        
+        .school-name {
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+            padding: 8px;
+            border-bottom: 1px solid black;
+        }
+        
+        .pass-title {
+            font-weight: bold;
+           
+            text-align: center;
+            padding: 6px;
+            border-bottom: 1px solid black;
+        }
+        
+        .session-info {
+           font-weight: bold;
+            text-align: center; 
+            padding: 4px;
+            border-bottom: 1px solid black;
+        }
+        
+        .info-header {
+            font-size: 11px;
+            padding: 4px 8px;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        
+        .info-row {
+            border-bottom: 1px solid black;
+        }
+        
+        .info-cell {
+            padding: 6px 8px;
+            font-size: 11px;
+            border-right: 1px solid black;
+            vertical-align: top;
+        }
+        
+        .photo-cell {
+            padding: 10px;
+            text-align: center;
+            vertical-align: top;
+            width: 150px;
+        }
+        
+        .photo-section {
+            margin-bottom: 20px;
+        }
+        
+        .photo-placeholder {
+            width: 120px;
+            height: 80px;
+            background-color: #d0d0d0;
+            border: 1px solid #999;
+            margin: 0 auto 5px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: #666;
+        }
+        
+        .photo-label {
+            font-size: 11px;
+            font-weight: bold;
+        }
+        
+        .visitor-section {
+            margin-top: 20px;
+        }
+        
+        .visitor-photo {
+            width: 120px;
+            height: 80px;
+            background-color: #d0d0d0;
+            border: 1px solid #999;
+            margin: 0 auto 5px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: #666;
+        }
+        
+        .issued-by {
+            padding: 8px;
+            font-size: 11px;
+            border-bottom: 1px solid black;
+        }
+        
+        .signatures-row {
+            padding: 0px 0;
+        }
+        
+        .signature-cell {
+            text-align: center;
+            font-size: 10px;
+            padding: 10px;
+            border: none;
+            vertical-align: top;
+        }
+        
+        .signature-line {
+            border-bottom: 1px solid black;
+            height: 15px;
+            margin-bottom: 5px;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+            }
+            
+        }
+    </style>
+
+    <title></title>
+</head>
+
+<!-- <body data-new-gr-c-s-check-loaded="14.1235.0" data-gr-ext-installed=""> -->
+
+    <div class="container" >
+        <table class="gate-pass-table">
+            <!-- Header Section -->
+            <tr class="header-row">
+                <td colspan="2" class="school-name header-18 ">ROCKWOODS INTERNATIONAL SCHOOL</td>
+            </tr>
+            <tr class="header-row">
+                <td colspan="2" class="pass-title text-16">
+                    <span>Student Gate Pass </span></td>
+            </tr>
+            <tr class="header-row">
+                <td colspan="2" class="session-info text-14">
+                    <span>Session 2025-2026 </span></td>
+            </tr>
+            
+            <!-- ID, Date, Time Row -->
+            <tr>
+                <td class="info-header header-12">
+                     <span  class="header-12 display-visible">ID: </span> 
+                     <span Class = "text-12">GPW27140625132754543 </span></td>
+                <td class="info-header text-12">Date: 14 Jun 2025 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Time: 01:27 PM</td>
+            </tr>
+            
+            <!-- Main Content Row -->
+            <tr style="border-bottom: 1px solid black;">
+                <td class="info-cell text-14" style="width: 65%; border-bottom: none;">
+                    <table style="width: 100%; border-collapse: collapse; border: none;">
+                        <tr style="border-bottom: 1px solid black;">
+                            <td style="padding: 6px 0; font-size: 11px;">
+                                <span  class="header-12 display-visible">Student Name: </span>
+                                <span class="text-12"> HARSH CHOUDHARY </span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid black;">
+                            <td style="padding: 6px 0; font-size: 11px;">
+                                <span  class="header-12 display-visible">Enrollment Code / Admission No: </span> 
+                                <span class = "text-12">25RWTS10184 </span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid black;">
+                            <td style="padding: 6px 0; font-size: 11px;">
+                                <span class="header-12 display-visible">Class Section: </span>
+                                <span Class = "text-12"> XI >> PCM</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid black;">
+                            <td style="padding: 6px 0; font-size: 11px;">
+                            <span class="header-12 display-visible"> Student Going With:</span>
+                            <span Class = "text-12"> Father </span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid black;">
+                            <td style="padding: 6px 0; font-size: 11px;">
+                            <span class="header-12 display-visible">  Relation:</span>
+                          <span Class = "text-12">    Father </span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid black;">
+                            <td style="padding: 6px 0; font-size: 11px;">
+                              <span class="header-12 display-visible">   Point of Contact No:  </span>
+                              <span Class = "text-12">    8791574445  </span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid black;">
+                            <td style="padding: 6px 0; font-size: 11px;"> 
+                            <span class="header-12 display-visible">   Student Type:</span> 
+                             <span Class = "text-12"> Day Scholar </span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid black;">
+                            <td style="padding: 6px 0; font-size: 11px;">
+                            <span class="header-12 display-visible">     Transport Avail: </span> 
+                            <span Class = "text-12">     No </span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid black;">
+                            <td style="padding: 6px 0; font-size: 11px;">
+                             <span class="header-12 display-visible">    Reason: </span> 
+                               <span Class = "text-12">     Feeling unwell and requesting to go home </span> </td>
+                        </tr>
+                        <tr >
+                            <td style="padding: 6px 0; font-size: 11px;">
+                                <span class="header-12 display-visible">  Permission Given By:  </span>
+                                 <span Class = "text-12"> VIKAS SIR </span> </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="photo-cell">
+                    <div class="photo-section">
+                        <div class="photo-placeholder">
+                        <span>Student Photo </span></div>
+                        <div class="photo-label">Student</div>
+                    </div>
+                    
+                    <div class="visitor-section">
+                        <div class="visitor-photo">
+                            <span>Visitor Photo </span></div>
+                        <div class="photo-label">Visitor</div>
+                    </div>
+                </td>
+            </tr>
+            
+            <!-- Issued By Row -->
+            <tr>
+                <td colspan="2" class="issued-by" style="border-bottom: none;">
+                 <span class="header-12 display-visible">     Issued by :</span>
+                 <span Class = "text-12">   NAVYA </span></td>
+            </tr>
+            
+            <!-- Signatures Row -->
+            <tr>
+                <td colspan="2" class="signatures-row" style="border: none;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr>
+                            <td class="signature-cell">
+                                <div class="signature-line"></div>
+                                <div>Class Teacher / Co-ordinator Signature</div>
+                            </td>
+                            <td class="signature-cell">
+                                <div class="signature-line"></div>
+                                <div>Parents / Guardian Signature</div>
+                            </td>
+                            <td class="signature-cell">
+                                <div class="signature-line"></div>
+                                <div>Duty Guards Signature</div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
